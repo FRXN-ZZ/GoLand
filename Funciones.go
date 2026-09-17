@@ -55,7 +55,24 @@ func sumaresta(a int, b int)(int, int){
 	return a + b,0
 }
 /* Variadica Functions ======= Funciones Variadicas*/
+func mostrarNum(numeros ...int){
+   fmt.Println("Los numeros ingresados son: ", numeros)
+}
+func main (){
+	var usr string
 
+	fmt.Println("Ingresa tu nombre")
+	fmt.Println(&usr)
+	saludar()
+	bienvenida(usr)
+
+	fmt.Println("El resultado de la suma es: ", suma(4, 5))
+	res1, rest2 := suma_resta(5,8)
+
+	fmt.Println("La suma es:", res1, "La resta es: ", rest2)
+	mostrarNum(5, 10, 15, 20, 25)
+	fmt.Println("La sumatoria es:", sumatoria(1, 2, 3, 4, 5, 6, 7, 8, 9, ))
+}
 func sumatoria(numeros ...int) int{
 	total :=0
 	for _,numero:= range numeros{
