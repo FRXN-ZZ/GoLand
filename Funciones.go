@@ -2,16 +2,7 @@ package main
 
 import "fmt"
 
-/*
 
-func <nombre>(param1, param2, ....param n)<valores de retorno>{
-  ------------------------
-  ------------------------
-  ------------------------
-  //return en el caso de que nuestra funcion retorne valores
-}
-
-*/
 func saludar() {
 	fmt.Println("Hola esta es mi primera función")
 }
@@ -24,7 +15,7 @@ func suma(num1 float64, num2 float64) float64 {
 	return num1 + num2
 }
 
-func main() {
+func main () {
 	var usr string
 
 	fmt.Print("Ingresa tu nombre: ")
@@ -54,7 +45,7 @@ func sumaresta(a int, b int)(int, int){
 	}
 	return a + b,0
 }
-/* Variadica Functions ======= Funciones Variadicas*/
+
 func mostrarNum(numeros ...int){
    fmt.Println("Los numeros ingresados son: ", numeros)
 }
