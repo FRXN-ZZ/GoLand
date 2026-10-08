@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func averageGrade(grades []float64) float64 {
+func Promedionota(grades []float64) float64 {
 	sum := 0.0
 	for _, grade := range grades {
 		sum += grade
@@ -23,7 +23,7 @@ func ejecutarOpcion1() {
 		notas = append(notas, nota)
 	}
 
-	promedio := averageGrade(notas)
+	promedio := Promedionota(notas)
 	fmt.Printf("\nEl promedio del curso es: %.2f\n", promedio)
 
 	if promedio >= 70 {
