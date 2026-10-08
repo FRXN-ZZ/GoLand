@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// Array de 6 estudiantes y 4 materias con notas de ejemplo
+	
 	notas := [6][4]float64{
 		{8.5, 9.0, 7.5, 10.0}, // Estudiante 1
 		{6.0, 7.0, 6.5, 8.0},  // Estudiante 2
@@ -18,9 +18,9 @@ func main() {
 
 	fmt.Println("=== ANÁLISIS DE NOTAS DE ESTUDIANTES ===")
 
-	// Recorremos cada estudiante usando un slice para sus notas
+	
 	for i, notasEstudiante := range notas {
-		// Convertimos la fila del array en un slice para procesarlo
+		
 		sliceNotas := notasEstudiante[:]
 
 		sumaEstudiante := 0.0
@@ -31,11 +31,11 @@ func main() {
 			sumaEstudiante += nota
 			sumaClase += nota
 
-			// Verificar nota más alta
+		
 			if nota > notaMasAlta {
 				notaMasAlta = nota
 			}
-			// Verificar nota más baja
+			
 			if nota < notaMasBaja {
 				notaMasBaja = nota
 			}
@@ -50,7 +50,7 @@ func main() {
 		fmt.Println("---------------------------------")
 	}
 
-	// Promedio general de la clase
+	
 	promedioGeneral := sumaClase / float64(totalNotas)
 	fmt.Printf("Promedio general de la clase: %.2f\n", promedioGeneral)
 }
