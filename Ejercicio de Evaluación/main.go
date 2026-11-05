@@ -68,5 +68,3 @@ func (m *Medicine) CalculateExpirationDate() time.Time {
 type Tablet struct {
 	Medicine
 	dosePerTablet  float64
-	isPrescription bool
-}
