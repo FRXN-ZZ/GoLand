@@ -57,9 +57,7 @@ func (m *Medicine) SetShelfLife(shelfLife int) error {
 	return nil
 }
 
-func (m *Medicine) GetShelfLife() int {
-	return m.shelfLife
-}
+
 
 func (m *Medicine) CalculateExpirationDate() time.Time {
 	return m.manufactureDate.AddDate(0, m.shelfLife, 0)
