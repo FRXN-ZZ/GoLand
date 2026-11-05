@@ -21,10 +21,6 @@ func (m *Medicine) SetName(name string) error {
 	return nil
 }
 
-func (m *Medicine) GetName() string {
-	return m.name
-}
-
 func (m *Medicine) SetManufacturer(manufacturer string) error {
 	if manufacturer == "" {
 		return errors.New("el fabricante no puede estar vacío")
